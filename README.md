@@ -16,6 +16,14 @@
 > 
 > *(These features were custom-built to support our modular architecture with minimal boilerplate)*
 
+### Using this Fork
+
+If you are using this custom fork of `github.com/google/wire` in your Go project for advanced dependency injection, you must add the following `replace` directive to your `go.mod` file:
+
+```go
+replace github.com/google/wire => github.com/vibe-foundry/wire v0.8.0
+```
+
 Wire is a code generation tool that automates connecting components using
 [dependency injection][]. Dependencies between components are represented in
 Wire as function parameters, encouraging explicit initialization instead of
